@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cupon</title>
+    <title>Gift Coupon</title>
     <style>
         body {
             color:#000;
@@ -13,6 +13,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #e8ec00, #000000);
+
         }
 
         .coupon {
@@ -101,6 +104,17 @@
             border-radius: 5px;
             color: #ffffff;
         }
+
+
+        footer {
+            display: none;
+            margin-top: 20px;
+        }
+
+
+        #state-2:checked~footer {
+            display: block;
+        }
     </style>
 </head>
 
@@ -116,12 +130,16 @@
             <div class="coupon-interno">
                 <div class="number">ᴬˡˡᶠᵒʳᴸᵒᵛᵉ</div>
                 <div class="divisor-left"></div>
-                <div class="text">Entrada para un reci</div>
+                <div class="text">Entrada para un recital 🖤 </div>
                 <div class="divisor-right"></div>
                 <div class="number">ᴬˡˡᶠᵒʳᴸᵒᵛᵉ</div>
             </div>
         </div>
     </div>
+
+    <footer>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4Tmc5u5jRJanYKDke2Ahi0?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   
+    </footer>
 </body>
 
 </html>
